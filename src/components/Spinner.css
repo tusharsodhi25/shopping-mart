@@ -1,0 +1,31 @@
+body, html {
+    height: 100%; /* Ensure body and html take full height */
+    margin: 0; /* Remove default margin */
+}
+
+.spinner-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.spinner {
+    width: 48px;
+    height: 48px;
+    border: 5px solid green;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
